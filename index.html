@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <link rel="stylesheet" type="text/css" href="/bootstrap-social-gh-pages/bootstrap-social.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
+    </head>
+    <body onload="googleApiClientReady()";>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                            <div class="navbar-header">
+                            <a class="navbar-brand" href="#">YouTube Search Player</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                  </div>
+                </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="content">
+                        <a id="login-link" href="#" class="btn btn-block btn-social btn-lg btn-google-plus">
+                        <i class="fa fa-google-plus"></i> Sign in with Google
+                        </a>
+                        <!-- <a id="login-link" href="#" style="display: none;">login</a> -->
+                    </div>
+
+                    <div id="buttons">
+                      <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+                    </div>
+                    <div id="results">
+                    </div>
+                    <div id="search-container">
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div id="player" style="display: none;"></div>
+                </div>
+                <div class="col-md-3">
+                    <div id="pcontrols" style="display: none;">
+                        <span id="play-button" class="glyphicon glyphicon-play" ></span><br/>
+                        <span id="pause-button" class="glyphicon glyphicon-pause"></span><br/>
+                    </div>
+               </div> 
+        </div>
+        <script type="text/javascript" src="oAuth.js"></script>
+        <script type="text/javascript" src="iFrame.js"></script>
+        <script src="search.js"></script>
+        <script src="https://apis.google.com/js/client.js" gapi_processed="true"></script>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+          <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
